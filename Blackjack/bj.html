@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Blackjack Widget</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<script type="text/javascript" src="bj.js"></script>
+		<script type="text/javascript" src="cards.js"></script>
+		<script type="text/javascript" src="chips.js"></script>
+		<script type="text/javascript">
+			preloadImages();
+		</script>
+        <style type="text/css">
+            @import "decoration.css";
+        </style>
+    </head>
+    <body id="body" class="portrait">
+		<div style="position:absolute; top=-30px;"><embed type="application/x-systeminfo-widget" hidden="yes" style="display:none;" /></div>
+		<table id="main" class="portrait" border="1" cellpadding="0" cellspacing="0">
+			<tr><td align="center">
+				<div id="header">Loading...</div>
+				<div id="info" style="display: none;" onclick="closeInfo()">
+					<table style="border: 1px dashed #330099">
+						<tr><td align="center"><script type="text/javascript">about();</script></td></tr>
+					</table>
+				</div>
+				<div id="game" style="display: none;">
+					<div id="buttons">
+						<input type="button" value="Hit" id="button-hit" class="button" onclick="hitCard();"/>
+						<input type="button" value="Stand" id="button-stand" class="button" onclick="Stand()"/>
+						<input type="button" value="Deal" id="button-deal" class="button" onclick="dealCards()" style="display: none;"/>
+						<input type="button" value="Bet" id="button-bet" class="button" onclick="setBet()"/>
+						<input type="button" value="Double" id="button-double" class="button" onclick="doubleBet();" style="display: none;"/>
+						<img id="button-close" src="images/Close.gif" class="button-img" onclick="vbrbasic(); setTimeout('window.close()',200);"/>
+						<img id="button-info" src="images/Info.gif" class="button-img" onclick="showInfo();"/>
+					</div>
+					<div id="house_id" class="house_id">House:</div>
+					<div id="house_sum" class="sum">0</div>
+					<div id="house_cards"><!-- House cards here //--></div>
+					<div id="player_id" class="playr_id">You:</div>
+					<div id="player_sum" class="sum">0</div>
+					<div id="player_cards"><!-- Player cards here //--></div>
+					<div id="msg"><!-- Msg for the player //--></div>
+					<div class="line"></div>
+					<div class="_balance">Balance:&nbsp;<span id="balance">0</span></div>
+					<div class="_bet" onclick="resetBet();">Bet:&nbsp;<span id="bet">0</span></div>
+					<div id="player_chips"><!-- Player chips here //--></div>
+					<div id="betting_chips"><!-- Betting chips here //--></div>
+				</div>
+			</td></tr>
+		</table>
+		<script type="text/javascript">
+			setTimeout("init();",500);
+		</script>
+    </body>
+</html>

@@ -1,0 +1,305 @@
+* {
+	padding: 0;
+   	margin: 0;
+   	border: 1;
+}
+
+body {
+}
+
+#house_cards {
+	position:absolute;
+	top:30px;
+	left:70px;
+	width:280px;
+	height:200px;
+	overflow: hidden;
+}
+
+#player_cards {
+	position:absolute;
+	top:180px;
+	left:70px;
+	width:280px;
+	height:200px;
+	overflow: hidden;
+}
+
+.card {
+	position:absolute;
+}
+
+.sum {
+	//font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 25px;
+	//padding: 20px 0px 0px 0px;
+	color: #009900;
+	border-bottom: 1px dashed #7484A0;
+	display:none;
+}
+
+#house_sum {
+	position:absolute;
+	top: 110px;
+	left: 5px;
+}
+
+#player_sum {
+	position:absolute;
+	top: 260px;
+	left: 5px;
+}
+
+#msg {
+	position:absolute;
+	font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 25px;
+	//padding: 20px 0px 0px 0px;
+	color: #330099;
+	border-bottom: 1px dashed;
+	display:none;
+	top:315px;
+	left:5px;
+}
+
+#house_id {
+	position:absolute;
+	//font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: #330066;
+	border-bottom: 1px dashed;
+	top:30px;
+	left:5px;
+}
+
+#player_id {
+	position:absolute;
+	//font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: #330066;
+	border-bottom: 1px dashed;
+	top:180px;
+	left:5px;
+}
+
+._balance {
+	position:absolute;
+	//font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: #330066;
+	border-bottom: 1px dashed;
+}
+.portrait ._balance {
+	top:610px;
+	left:5px;
+}
+.horizontal ._balance {
+	top:330px;
+	left:370px;
+}
+#balance {
+	color:black;
+}
+/*#balance {
+	position:absolute;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: black;
+	top:610px;
+	left:100px;
+}*/
+
+._bet {
+	position:absolute;
+	//font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 18px;
+	color: #330066;
+	border-bottom: 1px dashed;
+	top:610px;
+	left:190px;
+}
+.portrait ._bet {
+	top:610px;
+	left:190px;
+}
+.horizontal ._bet {
+	top:330px;
+	left:530px;
+}
+#bet {
+	color: black;
+}
+
+#main {
+	/*position:absolute;
+	top:0px;
+	left:0px;*/
+	overflow: hidden;
+}
+
+.portrait #main {
+	background: url(images/deskp.png) no-repeat;
+	height: 640px;
+	width: 360px;
+}
+
+.horizontal #main {
+	background: url(images/deskh.png) no-repeat;
+	height: 360px;
+	width: 640px;
+}
+
+#buttons {
+	position:absolute;
+	left:5px;
+	top: 450px;
+}
+
+.button {
+	position:absolute;
+	font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 25px;
+	background-color: purple;
+	width:80px;
+	height:60px;
+}
+.button:enabled {
+	position:absolute;
+	font-weight: bold;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	font-size: 25px;
+	color: cyan;
+	background-color: purple;
+	width:80px;
+	height:60px;
+}
+
+.portrait #button-deal,
+.portrait #button-hit {
+	bottom:0px;
+}
+.horizontal #button-deal,
+.horizontal #button-hit {
+	left:370px;
+	bottom:300px;
+}
+
+.portrait #button-stand {
+	left:100px;
+	bottom:0px;
+}
+.horizontal #button-stand {
+	left:460px;
+	bottom:300px;
+}
+
+.portrait #button-bet {
+	left:200px;
+	bottom:0px;
+}
+.horizontal #button-bet {
+	left:550px;
+	bottom:300px;
+}
+
+.portrait #button-double {
+	font-size:20px;
+	left:200px;
+	bottom:0px;
+}
+.horizontal #button-double {
+	font-size:20px;
+	left:550px;
+	bottom:300px;
+}
+
+.button-img {
+	position:absolute;
+}
+
+.portrait #button-close {
+	left:284px;
+	top:124px;
+}
+.horizontal #button-close {
+	left:560px;
+	bottom:380px;
+}
+
+.portrait #button-info {
+	left:286px;
+	top:50px;
+}
+.horizontal #button-info {
+	left:470px;
+	bottom:380px;
+}
+
+#info {
+	font-weight: bold;
+	color: #330099;
+	font-size: 30px;
+}
+
+.line {
+	position:absolute;
+	color: #ccc;
+	font-family: tahoma, verdana, helvetica, sans-serif;
+	vertical-align: text-top;
+}
+.portrait .line {
+	width:360px;
+	top:450px;
+	left:0px;
+	padding: 2px 0px 2px 0px;
+	//border-bottom: 1px dashed #7484A0;
+	border-bottom: 1px dashed black;
+}
+.horizontal .line {
+	height: 360px;
+	top:0px;
+	left:360px;
+	padding: 0px 2px 0px 2px;
+	border-left: 1px dashed black;
+}
+
+#betting_chips {
+	position:absolute;
+	display: none;
+}
+.portrait #betting_chips {
+	top:460px;
+	left:5px;
+	width:300px;	/*For CHIP_ENDLEFT_POSITION*/
+	height:100px;
+}
+.horizontal #betting_chips {
+	top:180px;
+	left:400px;
+	width:130px;	/*For CHIP_ENDLEFT_POSITION*/
+}
+
+.chip {
+	position:absolute;
+}
+
+#player_chips {
+	position:absolute;
+}
+.portrait #player_chips {
+	top:460px;
+	left:0px;
+	width:300px;
+}
+.horizontal #player_chips {
+	top:170px;
+	left:350px;
+	width:300px;
+}

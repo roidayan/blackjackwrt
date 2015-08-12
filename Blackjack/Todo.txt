@@ -1,0 +1,12 @@
+-----
+Todo: (updated: Mar 2, 2009)
+[High][Medium][Low] tags for priority of getting things done.
+-----
+- Show chips value. [High]
+- Remove chips from betting board higher than balance. [Low]
+- Save player chips and load when returning to game. [High]
+	When out of chips show a message to player and start with random chips.
+	Count number of games player is playing and number of wins.
+- Add play option: split. [Medium]
+	I will probably allow one split only.
+- Add multiplayer game. [Low]
