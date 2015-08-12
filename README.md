@@ -1,6 +1,9 @@
  The game is written in html and javascript.
  It is designed for nokia s60v5.
  
+ ![screenshot](https://raw.githubusercontent.com/roidayan/blackjackwrt/master/assets/Blackjackwrt_1_17923.jpg)
+
+ 
 Changelog:
  -----Mar 2, 2009 - v0.6
  -----Preloading images to avoid flickering.
